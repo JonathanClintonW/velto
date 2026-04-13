@@ -85,7 +85,7 @@ export default function DashboardLayout({ children, title }: DashboardLayoutProp
     return (
         <div className="min-h-screen bg-black flex flex-col">
             {/* Header */}
-            <header className="sticky top-0 z-40 glass-card border-b border-white/5">
+            <header className="sticky top-0 z-40 bg-black/90 backdrop-blur-md border-b border-white/10">
                 <div className="max-w-lg mx-auto px-4 py-3 flex items-center justify-between">
                     <div>
                         <h1 className="text-white font-bold text-lg">
@@ -114,7 +114,7 @@ export default function DashboardLayout({ children, title }: DashboardLayoutProp
             </main>
 
             {/* Bottom Navigation */}
-            <nav className="fixed bottom-0 left-0 right-0 z-40 glass-card border-t border-white/5">
+            <nav className="fixed bottom-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-md border-t border-white/10">
                 <div className="max-w-lg mx-auto flex items-center justify-around py-2">
                     {navItems.map((item) => (
                         <button
